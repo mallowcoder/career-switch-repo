@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Products</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="./css/global.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+
+    <body>
+        <h1 class="text-center">
+            welcome to yoyo sticker shop</h1>
+
+        <div class="d-flex flex-column vh-100 flex-shrink-0 p-3 text-white bg-dark" style="display: inline-block; float: left; max-width: 20%;">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"></svg>
+                <span class="fs-4">Navigation</span>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active" aria-current="page">
+                        <i class="fa fa-home"></i>
+                        <span class="ms-2">
+                            Home
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="products.html" class="nav-link text-white">
+                        <i class="fa fa-dashboard"></i>
+                        <span class="ms-2">
+                            Shop
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="orders.html" class="nav-link text-white">
+                        <i class="fa fa-first-order"></i>
+                        <span class="ms-2">
+                            My Orders
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html" class="nav-link text-white">
+                        <i class="fa fa-cog"></i>
+                        <span class="ms-2">
+                            Settings
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="cart.html" class="nav-link text-white">
+                        <i class="fa fa-bookmark"></i>
+                        <span class="ms-2">
+                            Cart
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <hr>
+            <div class="dropdown">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="./media/images/tea-yoyo-s200.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <strong>
+                        Yoyo Master
+                    </strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                    <li>
+                        <a class="dropdown-item" href="settings.html">
+                            Settings
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            Profile
+                        </a>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            Sign out
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="product-display" class="col-8 offset-3">
+            <div class="container mt-5 mb-5">	
+                <div class="card">	
+                    <div class="row g-0">	
+                        <div class="col-md-6 border-end">	
+                            <div class="d-flex flex-column justify-content-center">	
+                                <div class="main_image">	
+                                    <img src="" id="main_product_image" width="350">	
+                                </div>	
+                            </div>
+                        </div>
+                        <div class="col-md-6">	
+                            <div class="p-3 right-side">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h3 id="name">{{name}}</h3>
+                                    <span class="heart">
+                                        <i class='bx bx-heart'></i>
+                                    </span>	
+                                </div>	
+                                <div class="mt-2 pr-3 content">
+                                    <h4>Detailed description:</h4>
+                                    <p id="description">{{description}}</p>
+                                </div>	
+                                <h3 id="price">{{price}}</h3>
+	
+                                <div class="buttons d-flex flex-row mt-5 gap-3">
+                                    <input id="quantity" label="quantity" type="text" value="1" />	
+                                    <button class="btn btn-dark" id="addToCart">Add to Basket</button>	
+                                </div>	
+                            </div>
+                        </div>
+                    </div>	
+                </div> 
+            </div>
+        </div>
+        
+        <script type="application/javascript" src="./js/lib/jquery-3.6.3.min.js"></script>
+        <script type="application/javascript" src="./js/parse_url_params.js"></script>
+        <script type="application/javascript" src="./js/showProduct.js"></script>
+        <script type="application/javascript" src="./js/cookies.js"></script>
+        <script type="application/javascript" src="./js/addToCart.js"></script>
+    </body>
+
+</html>

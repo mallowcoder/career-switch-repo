@@ -1,0 +1,181 @@
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+  }
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+
+  .product_description {
+    white-space: pre-wrap;
+  }
+
+  body {
+    background-color: rgb(46, 45, 46);
+     }
+
+         /* title*/
+h1 {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 60px;
+    letter-spacing: -2.4px;
+    word-spacing: 3.2px;
+    color: #B3448E;
+    font-weight: 700;
+    font-variant: small-caps;
+    text-shadow: 0 0 6px #fff8f8,  0px 0px #ffffff;
+
+
+    text-align: center;
+   }
+
+  /* END OF title*/
+
+    /* side bar things*/
+  .sideMenu a {
+    position: absolute; /* Position them relative to the browser window */
+    left: -150px; /* Position them outside of the screen */
+    transition: 0.4s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 300px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 40px; /*  font size */
+    color: rgb(189, 159, 159); /*  text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+    background-color: #6b3481;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .sideMenu a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+  }
+  #mainPage {
+    top: 25%;
+  }  
+  #stickers{
+    top: 35%;    
+  }
+    #yoyoDressUp {
+    top: 45%;    
+  }  
+  #contact {
+    top: 55%;     
+  }
+    #aboutMe {
+    top: 65%;    
+  }
+  /* end of the side bar things*/
+ .everything {
+    float: left;
+    left: 20%;
+    
+ }
+  
+
+
+
+  /* everything else*/
+
+
+  /* END OF everything else*/
+
+.nav-link:hover{
+  background-color:#525252 !important;
+}
+
+.nav-link .fa{
+  transition:all 1s;
+}
+
+.nav-link:hover .fa{
+  transform:rotate(360deg);
+}
+
+#featuredImg {
+  max-width: fit-content;
+  max-height: fit-content;
+  height: auto;
+  max-width: 100%;
+  
+}
+
+#product_table {
+
+}
+
+#shop_img_cell {
+
+}
+
+#shop_table {
+min-width: 100%;
+height:auto;
+
+}
+

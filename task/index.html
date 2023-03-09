@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Yoyo Team">
+        <title>Tasks</title>
+    </head>
+    
+
+    <body>
+        <h2>Neightbours </h2>
+        <h4>Name: neighboursJSON</h4>
+        <h4>Input: </h4>
+        <select id="neighbourCountryCode">
+			<option value="GB">Great Britain</option>
+			<option value="FR">France</option>
+			<option value="DE">Germany</option>
+			<option value="US">USA</option>
+            <option value="AT">Austria</option>
+		</select>
+        <button id="neighbourRun">Get Neighbours</button>
+
+        <h4>Outputs</h4>
+        <div id="neighbourResults">
+            <ul id="neighbourOutput">
+            </ul>
+        </div>
+        <br><br>
+
+        <h2>Timezone </h2>
+        <h4>Name: timezoneJSON</h4>
+        <h4>Input: </h4>
+        <label for="timezoneLat">Latitude</label>
+        <input type="text" id="timezoneLat">
+        <label for="timezoneLng">Longitutde</label>
+        <input type="text" id="timezoneLng">
+
+        <button id="timezoneRun">Get Timezone Info</button>
+
+        <h4>Outputs</h4>
+        <div id="timezoneResults">
+            <table>
+                <tr>
+                    <td>timezoneID: </td>
+                    <td id="timezoneID"></td>
+                </tr>
+                <tr>
+                    <td>gmtOffset: </td>
+                    <td id="gmtOffset"></td>
+                </tr>
+                <tr>
+                    <td>Country: </td>
+                    <td id="timezoneCountry"></td>
+                </tr>
+            </table>
+        </div>
+        
+        <br><br>
+
+        <h2>PostalCode </h2>
+        <h4>Name: postalCodeSearchJSON</h4>
+        <h4>Input: </h4>
+        <label for="postalCode">Postal Code</label>
+        <input type="text" id="postalCode">
+        <label for="postalCountryCode">Country Code</label>
+        <input type="text" id="postalCountryCode">
+        <button id="postalCodeRun">Lookup Postal Code</button>
+        <h4>Outputs</h4>
+        <div id="postalCodeResults">
+            <ul id="places">
+
+            </ul>
+        </div>
+        <br><br>
+        <script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+		<script type="application/javascript" src="libs/js/script.js"></script>
+    </body>
+</html>
